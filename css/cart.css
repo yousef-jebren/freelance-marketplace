@@ -1,0 +1,18 @@
+.cart-contanier {
+    display: flex;
+    gap: 20px;
+}
+
+.left-cont{
+    width: 67%;
+}
+
+.right-cont{
+    width: 33%;
+}
+.empty-cart{
+    text-align: center;
+    padding: 60px 20px;
+    background: #F8F9FA;
+    border-radius: 8px;
+}

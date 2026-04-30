@@ -1,0 +1,195 @@
+/* GLOBAL PAGE LAYOUT */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Centered container for pages */
+.page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    min-height: calc(100vh - 120px); 
+}
+/* NAVIGATION SIDEBAR */
+.side-nav {
+   background-color: #334155;
+  padding: 20px;
+}
+
+.side-nav a {
+  display: block;
+  color: #ffffffff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.side-nav a:hover {
+  color: #f1c40f;
+}
+
+.side-nav a.active {
+  background-color: #FACC15; 
+  color: #111827;
+  font-weight: bold;
+}
+
+/* Standard centered form layout */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* FORM STRUCTURE */
+form {
+    width: 100%;
+}
+
+/* Logical sections */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    margin: 10px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* FIELD GROUPINGS */
+.field-group {
+    margin-bottom: 15px;
+}
+
+/* LABEL REQUIREMENTS */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Asterisk for required fields */
+.required {
+    color: red;
+    margin-left: 3px;
+}
+
+/* INPUT TYPES AND WIDTH */
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* TEXTAREA */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* PLACEHOLDERS */
+::placeholder {
+    color: #999999;
+}
+
+/* VALIDATION BORDERS */
+input.error,
+select.error,
+textarea.error {
+    border: 1px solid red;
+}
+
+/* Informative hint text */
+.hint {
+    font-size: 13px;
+    color: #666666;
+    margin-top: 4px;
+}
+
+/* ERROR HANDLING */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* General form errors */
+.form-errors {
+    background: #ffe6e6;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* SUCCESS HANDLING */
+.success-message {
+    color: green;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #e6ffe6;
+}
+
+/* RADIO BUTTONS */
+.radio-group {
+    margin-top: 8px;
+}
+
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* BUTTON STANDARDS */
+.button-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Primary action button */
+.primary-btn {
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Secondary action button */
+.secondary-btn {
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}
+
+/* Exact required button styles */
+.full-width-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Destructive action */
+.destructive-btn {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid red;
+}

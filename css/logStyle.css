@@ -1,0 +1,135 @@
+/* PAGE BACKGROUND */
+body {
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    min-height: calc(100vh - 120px); 
+}
+
+/* Navigation Sidebar */
+.side-nav {
+   background-color: #334155;
+  padding: 20px;
+}
+
+.side-nav a {
+  display: block;
+  color: #ffffffff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.side-nav a:hover {
+  color: #f1c40f;
+}
+
+.side-nav a.active {
+  background-color: #FACC15; 
+  color: #111827;
+  font-weight: bold;
+}
+
+/* LOGIN FORM CONTAINER */
+.form-container {
+    max-width: 420px;
+    margin: 50px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* TITLE */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* FORM */
+form {
+    width: 100%;
+}
+
+/* LABELS */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* INPUTS */
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* CHECKBOX */
+.form-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* BUTTON */
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #1e40af;
+}
+
+/* LINKS */
+.form-container a {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* ERROR & SUCCESS MESSAGES */
+.form-container p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.form-container p[style*="red"] {
+    background: #ffe6e6;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.form-container p[style*="green"] {
+    background: #e6ffe6;
+    padding: 8px;
+    border-radius: 6px;
+}

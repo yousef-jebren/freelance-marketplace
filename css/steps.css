@@ -1,0 +1,71 @@
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.step-completed .step-icon {
+    background: #28A745;
+    color: #fff;
+}
+.step-completed .step-icon::before {
+    content: "✓";
+}
+.step-active .step-icon {
+    background: #007BFF;
+    color: #fff;
+}
+.step-inactive .step-icon {
+    background: #E9ECEF;
+    border: 2px solid #6C757D;
+    color: #6C757D;
+}
+
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* VERY IMPORTANT */
+}
+
+/* The connecting line */
+.step-item::after {
+    content: "";
+    position: absolute;
+    top: 25px;              /* center with the circle */
+    right: -50%;
+    width: 100%;
+    height: 3px;
+    background: #CED4DA;    /* inactive line */
+    z-index: 0;
+}
+
+/* Remove line after last step */
+.step-item:last-child::after {
+    display: none;
+}
+
+/* Completed step line */
+.step-completed::after {
+    background: #28A745;
+}
+

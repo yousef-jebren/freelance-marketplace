@@ -1,0 +1,55 @@
+.profile-wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-column {
+  width: 30%;
+}
+
+.right-column {
+  width: 70%;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.role-badge.client {
+  background: blue;
+}
+
+.role-badge.freelancer {
+  background: green;
+}
+
+h3 {
+  display: inline-block;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}

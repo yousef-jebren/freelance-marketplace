@@ -1,0 +1,43 @@
+.success-banner {
+    background: #28A745;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.success-icon {
+    width: 64px;
+    height: 64px;
+    background: #ffffff;
+    color: #28A745;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.order-cards {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.order-card {
+    background: #ffffff;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+.order-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.action-buttons {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
